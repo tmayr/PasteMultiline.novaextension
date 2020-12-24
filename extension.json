@@ -1,0 +1,24 @@
+{
+  "identifier": "org.tmayr.PasteMultiline",
+  "name": "PasteMultiline",
+  "description": "lets you paste multiline clipboard content into multiple cursors, pasting 1 line per cursor.",
+  "version": "1.0",
+  "categories": ["commands"],
+
+  "main": "main.js",
+
+  "activationEvents": ["onLanguage:javascript"],
+
+  "entitlements": {
+    "clipboard": true
+  },
+
+  "commands": {
+    "editor": [
+      {
+        "title": "Paste Multiline",
+        "command": "tm.paste"
+      }
+    ]
+  }
+}
